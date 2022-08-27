@@ -1,0 +1,15 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: focal
+Version: 20.04
+Codename: focal
+Date: Thu, 23 Apr 2020 17:33:17 UTC
+Architectures: amd64 arm64
+Components: main restricted universe multiverse
+Description: Ubuntu Focal 20.04
+MD5Sum:
+ 7ef83228ec207df10acac48fbdd81112          5826751 main/binary-amd64/Packages
+ 737716846a5e245ed9e7590d482005fe          1274738 main/binary-amd64/Packages.gz
+SHA1:
+ aef5c36ce45bd5c3154a1bb03c62b6cfb33e2bc6          5826751 main/binary-amd64/Packages
+ 9f9fc72cf9069945408ca84e7a7e0e22d3c2dda4          1274738 main/binary-amd64/Packages.gz
