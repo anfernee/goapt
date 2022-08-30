@@ -6,6 +6,7 @@ require (
 	github.com/ProtonMail/gopenpgp/v2 v2.4.10
 	github.com/google/go-cmp v0.5.8
 	github.com/spf13/cobra v1.5.0
+	github.com/ulikunitz/xz v0.5.10
 )
 
 require (
