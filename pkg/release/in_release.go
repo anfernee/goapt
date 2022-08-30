@@ -28,7 +28,7 @@ type VerifyOptions struct {
 // VerifyWithOptions verifies a local file or http/https url with given public GNG
 // public key.
 func VerifyWithOptions(path string, options *VerifyOptions) (string, error) {
-	cleartext, err := loadCleaerText(path)
+	cleartext, err := loadClearText(path)
 	if err != nil {
 		return "", err
 	}
@@ -46,8 +46,8 @@ func Verify(path string) (string, error) {
 	return VerifyWithOptions(path, nil)
 }
 
-// loadCleaerText loads cleartext message from path or url.
-func loadCleaerText(pathOrUrl string) ([]byte, error) {
+// loadClearText loads cleartext message from path or url.
+func loadClearText(pathOrUrl string) ([]byte, error) {
 	if !strings.HasPrefix(pathOrUrl, "http") {
 		return ioutil.ReadFile(pathOrUrl)
 	}
