@@ -5,8 +5,6 @@ import (
 	"compress/gzip"
 	"fmt"
 	"io"
-	"net/http"
-	"os"
 	"strconv"
 	"strings"
 
@@ -30,7 +28,7 @@ func Load(pathOrUrl string) ([]Package, error) {
 		err         error
 	)
 
-	rc, err = readerOf(pathOrUrl)
+	rc, err = common.ReaderOf(pathOrUrl)
 	if err != nil {
 		return nil, err
 	}
@@ -94,23 +92,4 @@ func parse(r io.Reader) ([]Package, error) {
 		ret = ret[:len(ret)-1]
 	}
 	return ret, nil
-}
-
-// readerOf loads io.ReadCloser from a path or url
-func readerOf(pathOrUrl string) (io.ReadCloser, error) {
-	if !strings.HasPrefix(pathOrUrl, "http") {
-		return os.Open(pathOrUrl)
-	}
-
-	resp, err := http.Get(pathOrUrl)
-	if err != nil {
-		return nil, err
-	}
-
-	if resp.StatusCode != http.StatusOK {
-		resp.Body.Close()
-		return nil, fmt.Errorf("failed to fetch %q, status: %v", pathOrUrl, resp.Status)
-	}
-
-	return resp.Body, nil
 }

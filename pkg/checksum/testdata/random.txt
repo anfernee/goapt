@@ -1,0 +1,17 @@
+A Philosophy of Software Design, 2nd Edition Paperback – July 26, 2021
+by John Ousterhout (Author)
+
+This book addresses the topic of software design: how to decompose complex software systems into modules (such as classes and methods) that can be implemented relatively independently. The book first introduces the fundamental problem in software design, which is managing complexity. It then discusses philosophical issues about how to approach the software design process and it presents a collection of design principles to apply during software design. The book also introduces a set of red flags that identify design problems. You can apply the ideas in this book to minimize the complexity of large software systems, so that you can write software more quickly and cheaply.
+
+Product details
+Publisher ‏ : ‎ Yaknyam Press (July 26, 2021)
+Language ‏ : ‎ English
+Paperback ‏ : ‎ 196 pages
+ISBN-10 ‏ : ‎ 173210221X
+ISBN-13 ‏ : ‎ 978-1732102217
+Item Weight ‏ : ‎ 10.2 ounces
+Dimensions ‏ : ‎ 6.5 x 0.45 x 8 inches
+Best Sellers Rank: #22,412 in Books (See Top 100 in Books)
+#31 in Software Development (Books)
+#32 in Microsoft Programming (Books)
+#123 in Business Technology
