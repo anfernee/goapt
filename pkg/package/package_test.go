@@ -25,6 +25,9 @@ func TestLoadPackage(t *testing.T) {
 			if pkg.Name == "" {
 				t.Errorf("expect non empty pkg.Name; got <empty>")
 			}
+			if pkg.Arch == "" {
+				t.Errorf("expect non empty pkg.Arch; got <empty>")
+			}
 			if pkg.Size == 0 {
 				t.Errorf("expect pkg.Size > 0; got 0")
 			}

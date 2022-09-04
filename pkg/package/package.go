@@ -17,6 +17,7 @@ type Package struct {
 	common.Metadata
 	Filename string
 	Size     int
+	Arch     string
 }
 
 // Load loads packages from a path or URL
@@ -83,6 +84,8 @@ func parse(r io.Reader) ([]Package, error) {
 			cur.Homepage = trim(line, "Homepage:")
 		case strings.HasPrefix(line, "Filename:"):
 			cur.Filename = trim(line, "Filename:")
+		case strings.HasPrefix(line, "Architecture:"):
+			cur.Arch = trim(line, "Architecture:")
 		case strings.HasPrefix(line, "Size:"):
 			cur.Size, _ = strconv.Atoi(trim(line, "Size:"))
 		}
