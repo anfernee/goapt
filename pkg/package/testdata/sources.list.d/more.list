@@ -1,0 +1,4 @@
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted
